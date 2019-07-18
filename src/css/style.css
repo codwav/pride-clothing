@@ -1,0 +1,64 @@
+.navbar {
+  width: 80%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px transparent #000;
+  padding: 10px;
+  -webkit-box-shadow: -0.5px -1px 12px 4px rgba(180, 180, 180, 0.6);
+          box-shadow: -0.5px -1px 12px 4px rgba(180, 180, 180, 0.6);
+  border-radius: 35px;
+  margin: auto;
+  margin-top: 7px;
+}
+
+.navbar .logo {
+  width: 160px;
+  height: 50px;
+  background: url("../images/prideclothing-logo-6-2.jpg");
+  background-size: cover;
+}
+
+.navbar .nav-links {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.navbar .nav-links .nav-text {
+  text-decoration: none;
+  font-size: 20px;
+  color: #585858;
+}
+
+.navbar .nav-links .nav-text:hover {
+  background: url("../images/lionPride.JPG") no-repeat center;
+}
+
+.navbar .nav-design_btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  background: #f12b2b;
+  border-radius: 10px;
+}
+
+.navbar .nav-design_btn:hover {
+  background: #000;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

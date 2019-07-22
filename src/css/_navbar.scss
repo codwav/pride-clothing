@@ -1,6 +1,6 @@
 .navbar {
   width: 80%;
-  height: 12vh;
+  height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,9 +32,12 @@
 
       &:hover {
         background: url("../images/lionPride.JPG") no-repeat center;
+        height: 50px;
+        width: 50px;
       }
     }
   }
+
   .nav-design_btn {
     text-decoration: none;
     color: #fff;

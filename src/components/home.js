@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import "./../css/style.scss";
 import Grid from "@material-ui/core/Grid";
 import { Button } from "@material-ui/core";
+import Section2 from "./section2";
 
 class Home extends Component {
   render() {
@@ -55,6 +56,7 @@ class Home extends Component {
             </div>
           </Grid>
         </Grid>
+        <Section2 />
       </div>
     );
   }

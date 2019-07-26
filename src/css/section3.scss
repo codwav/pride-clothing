@@ -1,0 +1,42 @@
+.wrap {
+  margin: 10% 0;
+}
+
+.section3-img {
+  float: right;
+  width: 30%;
+  margin-right: -250px;
+
+  img {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+.section3-content {
+  width: 60%;
+  float: left;
+  margin-left: 10%;
+
+  h1 {
+    font-weight: 1000;
+    font-size: 55px;
+  }
+
+  p {
+    color: grey;
+    text-align: left;
+  }
+
+  .section3-btn {
+    top: 15px;
+    align-items: center;
+    border-radius: 30px;
+
+    &:hover {
+      background: rgb(255, 84, 84);
+
+      color: white;
+    }
+  }
+}

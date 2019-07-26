@@ -146,6 +146,203 @@
   color: white;
 }
 
+.wrap {
+  margin: 10% 0;
+}
+
+.section3-img {
+  float: right;
+  width: 30%;
+  margin-right: -250px;
+}
+
+.section3-img img {
+  height: 500px;
+  width: 500px;
+}
+
+.section3-content {
+  width: 60%;
+  float: left;
+  margin-left: 10%;
+}
+
+.section3-content h1 {
+  font-weight: 1000;
+  font-size: 55px;
+}
+
+.section3-content p {
+  color: grey;
+  text-align: left;
+}
+
+.section3-content .section3-btn {
+  top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+.section3-content .section3-btn:hover {
+  background: #ff5454;
+  color: white;
+}
+
+.products {
+  position: absolute;
+  width: 945px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.5px solid black;
+}
+
+.products::before {
+  content: "";
+  margin-top: 200px;
+}
+
+.products .tab1,
+.products .tab2,
+.products .tab3,
+.products .tab4 {
+  height: 50px;
+  width: 204px;
+  padding: 15px;
+  border: 0.5px solid #262626a1;
+  -webkit-box-shadow: -2px 2px 3px;
+          box-shadow: -2px 2px 3px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.products .tab1:hover,
+.products .tab2:hover,
+.products .tab3:hover,
+.products .tab4:hover {
+  background: #ff3232;
+}
+
+.products .tab1:hover .tab-text,
+.products .tab2:hover .tab-text,
+.products .tab3:hover .tab-text,
+.products .tab4:hover .tab-text {
+  color: whitesmoke;
+}
+
+.products .tab1:active,
+.products .tab2:active,
+.products .tab3:active,
+.products .tab4:active {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff0844), to(#000000));
+  background-image: linear-gradient(to right, #ff0844 0%, #000000 100%);
+}
+
+.products .tab1 img,
+.products .tab2 img,
+.products .tab3 img,
+.products .tab4 img {
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
+}
+
+.products .tab-text {
+  font-size: 25px;
+  font-weight: 500;
+  color: #7e7e7e;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.products .img-box {
+  width: 100%;
+}
+
+.products .img-box .product-images {
+  position: relative;
+  bottom: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products .img-box .product-images .image {
+  position: relative;
+  top: -100px;
+  overflow: hidden;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.products .img-box .product-images .image:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.products .img-box .product-images .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  height: 450px;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.products .img-box .product-images .image .content {
+  position: absolute;
+  width: 250px;
+  height: 450px;
+  background: rgba(26, 24, 24, 0.7);
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.products .img-box .product-images .image:hover .content {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 body {
   margin: 0;
   width: 100%;

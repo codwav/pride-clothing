@@ -1,0 +1,37 @@
+.wrap {
+  margin-top: 20%;
+}
+
+.section-img {
+  float: left;
+
+  img {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+.section2-content {
+  width: 50%;
+  float: right;
+
+  h1 {
+    margin-left: -18%;
+    font-weight: 1000;
+    font-size: 55px;
+  }
+
+  p {
+    color: grey;
+  }
+
+  .section2-btn {
+    border-radius: 30px;
+
+    &:hover {
+      background: rgb(255, 84, 84);
+
+      color: white;
+    }
+  }
+}

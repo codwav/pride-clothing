@@ -1,0 +1,47 @@
+// @media screen and (max-width: 1920px) {
+.home {
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+}
+
+.bg-image {
+  position: absolute;
+
+  .home-img {
+    margin-top: -2em;
+    margin-left: 12em;
+    width: 80%;
+    height: 100vh;
+  }
+}
+
+.home-content {
+  position: relative;
+  margin-top: 8em;
+  margin-left: 3em;
+
+  .social-links {
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    text-align: left;
+
+    .social-btn {
+      display: inline-block;
+      border-radius: 10px;
+
+      &:hover {
+        background: #e74c3c;
+        color: white;
+      }
+
+      img {
+        height: 35px;
+        width: 35px;
+        margin: 5px;
+        padding: 2px;
+      }
+    }
+  }
+}

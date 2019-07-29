@@ -1,105 +1,136 @@
-.products {
-  position: absolute;
-  width: 945px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: center;
-  border: 0.5px solid rgb(0, 0, 0);
+.react-tabs {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #aaa;
 
-  &::before {
-    content: "";
-    margin-top: 200px;
+  &__tab-list {
+    border: 1px solid #aaa;
+    margin: -2px 0;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .tab1,
-  .tab2,
-  .tab3,
-  .tab4 {
-    height: 50px;
-    width: 204px;
-    // background-image: linear-gradient(to right, #ff0844 0%, #000000 100%);
-    padding: 15px;
-    border: 0.5px solid #262626a1;
-    box-shadow: -2px 2px 3px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__tab {
+    width: 246px;
+    height: 52px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 10px;
     cursor: pointer;
+    transition: all 0.5s;
 
     &:hover {
-      background: rgb(255, 50, 50);
-
-      .tab-text {
-        color: whitesmoke;
-      }
+      background: #ca1527;
+      transform: translateY(-3px);
+      color: #fff;
     }
 
     &:active {
-      background-image: linear-gradient(to right, #ff0844 0%, #000000 100%);
+      border-bottom: none;
+      background: yellow;
     }
+  }
 
-    img {
-      width: 40px;
-      height: 40px;
-      margin-top: -10px;
-    }
+  img {
+    width: 35px;
+    height: 35px;
+    margin: -5px 10px -3px 30px;
   }
 
   .tab-text {
-    font-size: 25px;
-    font-weight: 500;
-    color: rgb(126, 126, 126);
-    margin-left: 5px;
-    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 25px;
+    float: left;
   }
 
-  .img-box {
-    width: 100%;
+  &--selected {
+    background: rgb(167, 184, 19);
+    border-color: #aaa;
+    color: black;
+    border-radius: 5px 5px 0 0;
+  }
 
-    .product-images {
+  &--disabled {
+    color: GrayText;
+    cursor: default;
+  }
+
+  &:focus {
+    box-shadow: 0 0 5px hsl(208, 99%, 50%);
+    border-color: hsl(208, 99%, 50%);
+    outline: none;
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      left: -4px;
+      right: -4px;
+      bottom: -5px;
+      background: #fff;
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+}
+
+.img-box {
+  width: 100%;
+
+  .product-images {
+    position: relative;
+    bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+
+    .image {
       position: relative;
-      bottom: 0px;
-      box-sizing: border-box;
-      display: flex;
+      top: 0px;
+      overflow: hidden;
+      margin: 35px auto;
+      cursor: pointer;
 
-      .image {
-        position: relative;
-        top: -100px;
+      &:hover img {
+        transform: scale(1.2);
+      }
+
+      img {
+        object-fit: cover;
+        width: 250px;
+        height: 420px;
+        margin: 0 auto;
+        transition: transform 0.8s;
+      }
+
+      .content {
+        position: absolute;
+        width: 250px;
+        height: 440px;
+        background: rgba(26, 24, 24, 0.7);
+        top: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         overflow: hidden;
-        margin: 30px;
-        cursor: pointer;
+        transition: 0.8s ease;
+        transform: scaleX(0);
+      }
 
-        &:hover img {
-          transform: scale(1.2);
-        }
-
-        img {
-          object-fit: cover;
-          width: 250px;
-          height: 450px;
-          transition: transform 0.8s;
-        }
-
-        .content {
-          position: absolute;
-          width: 250px;
-          height: 450px;
-          background: rgba(26, 24, 24, 0.7);
-          top: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          transition: 0.8s ease;
-          transform: scaleX(0);
-        }
-
-        &:hover .content {
-          transform: scaleX(1);
-        }
+      &:hover .content {
+        transform: scaleX(1);
       }
     }
   }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Navbar from "../src/components/navbar";
 import Home from "../src/components/home";
 import About from "../src/components/about";
 import Products from "../src/components/products";

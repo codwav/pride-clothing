@@ -5,12 +5,13 @@
 
   .footer-section {
     border-top: 1px solid #000;
-    margin: 30px 50px;
+    margin: 30px 120px;
 
     .footer-logo {
+      display: block;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
 
       .footer-copyright {
@@ -18,12 +19,13 @@
       }
 
       img {
-        width: 300px;
-        height: 80px;
+        width: 230px;
+        height: 70px;
       }
     }
 
     .footer__nav-links {
+      margin-top: 25px;
       list-style: none;
       display: inline-block;
 

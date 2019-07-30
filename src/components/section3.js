@@ -25,6 +25,11 @@ const Section3 = () => {
           </Grid>
           <Grid item xs={12} sm={8} md={6}>
             <div className="section3-img">
+              <img
+                className="hoodie-top__img"
+                src={require("../images/Image1.png")}
+                alt="image1"
+              />
               <img src={require("../images/basic.png")} />
             </div>
           </Grid>

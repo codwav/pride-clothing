@@ -1,6 +1,6 @@
 .navbar {
-  width: 80%;
-  height: 10vh;
+  width: 90%;
+  height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,51 +62,64 @@
   color: white;
 }
 
-.home {
+.container {
   width: 100%;
-  height: 90vh;
-  margin: auto;
+  height: 88%;
 }
 
-.bg-image {
-  position: absolute;
-}
-
-.bg-image .home-img {
-  margin-top: -2em;
-  margin-left: 12em;
-  width: 80%;
-  height: 100vh;
-}
-
-.home-content {
+.container .home-content {
   position: relative;
-  margin-top: 8em;
-  margin-left: 3em;
+  display: block;
+  margin: 130px 0 0 80px;
 }
 
-.home-content .social-links {
-  position: absolute;
-  top: 110%;
-  width: 100%;
-  text-align: left;
+.container .home-content h1 {
+  margin: 10px 0;
 }
 
-.home-content .social-links .social-btn {
-  display: inline-block;
-  border-radius: 10px;
+.container .home-content p {
+  padding: 10px 10px 50px 0;
 }
 
-.home-content .social-links .social-btn:hover {
-  background: #e74c3c;
-  color: white;
+.container .home-content .social-links {
+  position: relative;
+  top: 20px;
 }
 
-.home-content .social-links .social-btn img {
+.container .home-content .social-links .social-btn img {
   height: 35px;
   width: 35px;
   margin: 5px;
-  padding: 2px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .home-content .social-links .social-btn img:hover {
+  cursor: pointer;
+  background: #6faedc;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px #000;
+          box-shadow: 0 2px 2px #000;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.container .home-content .social-links .social-btn img:active {
+  background: #ca1527;
+}
+
+.container .bg-image {
+  position: relative;
+  display: block;
+  left: 600px;
+  top: -438px;
+  width: 650px;
+  height: 580px;
+}
+
+.container .bg-image .home-img {
+  width: 650px;
+  height: 580px;
 }
 
 .wrap {
@@ -362,7 +375,7 @@
 
 .footer .footer-section {
   border-top: 1px solid #000;
-  margin: 30px 50px;
+  margin: 30px 120px;
 }
 
 .footer .footer-section .footer-logo {
@@ -385,7 +398,7 @@
 }
 
 .footer .footer-section .footer-logo img {
-  width: 300px;
+  width: 250px;
   height: 80px;
 }
 
@@ -427,9 +440,14 @@
   line-height: 2px;
 }
 
-body {
+* {
   margin: 0;
-  width: 100%;
-  height: 100vh;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */

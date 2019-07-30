@@ -13,51 +13,52 @@ class Home extends Component {
     return (
       <div>
         <Navbar />
-        <Grid className="home" container spacing={2}>
-          <Grid item sm={8} xs={12} md={4}>
-            <div className="home-content">
-              <h1>T-Shirts Designing</h1>
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </p>
-              <Button variant="outlined" size="large" color="secondary">
-                Customise Now
-              </Button>
-              <div className="social-links">
-                <a className="social-btn" href="#">
-                  <img
-                    src={require("../images/icon/facebook.svg")}
-                    alt="facebook"
-                  />
-                </a>
-                <a className="social-btn" href="#">
-                  <img
-                    src={require("../images/icon/twitter.svg")}
-                    alt="facebook"
-                  />
-                </a>
-                <a className="social-btn" href="#">
-                  <img
-                    src={require("../images/icon/linkedin.svg")}
-                    alt="facebook"
-                  />
-                </a>
+        <Grid container spacing={1}>
+          <div className="container">
+            <Grid item sm={8} xs={12} md={6}>
+              <div className="home-content">
+                <h1>T-Shirts Designing</h1>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters.
+                </p>
+                <Button variant="outlined" size="large" color="secondary">
+                  Customise Now
+                </Button>
+                <div className="social-links">
+                  <a className="social-btn" href="#">
+                    <img
+                      src={require("../images/icon/facebook.svg")}
+                      alt="facebook"
+                    />
+                  </a>
+                  <a className="social-btn" href="#">
+                    <img
+                      src={require("../images/icon/twitter.svg")}
+                      alt="facebook"
+                    />
+                  </a>
+                  <a className="social-btn" href="#">
+                    <img
+                      src={require("../images/icon/linkedin.svg")}
+                      alt="facebook"
+                    />
+                  </a>
+                </div>
               </div>
-            </div>
-          </Grid>
-          <Grid>
-            <div className="bg-image">
-              <img
-                className="home-img"
-                src={require("../images/bg.png")}
-                alt="bg"
-              />
-            </div>
-          </Grid>
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+              <div className="bg-image">
+                <img
+                  className="home-img"
+                  src={require("../images/bg.png")}
+                  alt="bg"
+                />
+              </div>
+            </Grid>
+          </div>
         </Grid>
         <Section2 />
         <Section3 />

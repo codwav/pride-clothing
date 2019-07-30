@@ -1,5 +1,5 @@
 .wrap {
-  margin: 10% 0;
+  margin: 50px 0;
 }
 
 .section3-img {
@@ -7,9 +7,16 @@
   width: 30%;
   margin-right: -250px;
 
+  .hoodie-top__img {
+    border: 1px solid blue;
+    width: 700px;
+    height: 38px;
+    margin: -80px 50px 50px -210px;
+  }
+
   img {
-    height: 500px;
-    width: 500px;
+    height: 380px;
+    width: 350px;
   }
 }
 
@@ -21,11 +28,13 @@
   h1 {
     font-weight: 1000;
     font-size: 55px;
+    padding-bottom: 20px;
   }
 
   p {
     color: grey;
     text-align: left;
+    padding-bottom: 15px;
   }
 
   .section3-btn {

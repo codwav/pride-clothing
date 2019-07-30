@@ -9,7 +9,7 @@ export class Navbar extends Component {
       <Grid container className="nav-menu">
         <nav className="navbar">
           <Link to="/">
-            <div className="logo" />
+            <img alt="Pride Clothing NZ home page" className="logo" src={require("../images/prideclothing-logo-6-2.jpg")} width="250" />
           </Link>
           <ul className="nav-links">
             <Link className="nav-text" to="/">
@@ -22,15 +22,15 @@ export class Navbar extends Component {
               <li>Products</li>
             </Link>
             <Link className="nav-text" to="/ourwork">
-              <li>OurWork</li>
+              <li>Our Work</li>
             </Link>
             <Link className="nav-text" to="/contact">
               <li>Contact Us</li>
             </Link>
           </ul>
-          <Button variant="outlined" color="secondary">
+          <Link className="nav-text primary-button" id="product-design-button">
             Product Design
-          </Button>
+          </Link>
         </nav>
       </Grid>
     );

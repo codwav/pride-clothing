@@ -1,52 +1,85 @@
+/* Navigation bar specific CSS variables */
+$navbar-font-size: 24px;
+$navbar-font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen",
+"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif;
+$navbar-font-weight: 300;
+
+/* Navigation bar CSS */
 .navbar {
-  width: 90%;
-  height: 12vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 1px transparent #000;
+  border-radius: 30px;
+  box-shadow: 0 0 5px #ccc;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%; max-width: 1700px;
+}
+
+.nav-links {
+  display: inline-block;
+}
+.nav-links li {
+  color: #000;
+  display: inline-block;
+  line-height: 40px;
+  width: 110px;
+}
+.nav-links li:hover {
+  text-decoration: underline
+}
+
+.nav-text {
+  color: #333333;
+  font-family: $navbar-font-family;
+  font-size: $navbar-font-size;
+  font-weight: $navbar-font-weight;
+}
+
+.logo {
+  float: left;
+  margin-left: 40px;
+}
+
+#product-design-button {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.primary-button {
+  background: #B13333;
+  color: #fff;
+  font-family: $navbar-font-family;
+  font-size: $navbar-font-size;
+  font-weight: $navbar-font-weight;
   padding: 10px;
-  box-shadow: -0.5px -1px 12px 4px rgba(180, 180, 180, 0.6);
-  border-radius: 35px;
-  margin: auto;
-  margin-top: 7px;
+  text-decoration: none;
+}
 
-  .logo {
-    width: 160px;
-    height: 50px;
-    background: url("../images/prideclothing-logo-6-2.jpg");
-    background-size: cover;
-  }
+.primary-button:hover {
+  background: #000
+}
 
+/* Responsive design changes to adapt to screen size */
+@media only screen and (min-width: 1500px) {
   .nav-links {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-
-    .nav-text {
-      text-decoration: none;
-      font-size: 20px;
-      color: rgb(88, 88, 88);
-
-      &:hover {
-        background: url("../images/lionPride.JPG") no-repeat center;
-      }
-    }
+    margin-left: 100px;
   }
+  .nav-links li {
+    width: 150px;
+  }
+  #product-design-button {
+    margin-left: 100px;
+  }
+}
 
-  .nav-design_btn {
-    text-decoration: none;
-    color: #fff;
+@media only screen and (max-width: 1490px) {
+  .nav-text {
     font-size: 20px;
-    padding: 10px;
-    background: rgb(241, 43, 43);
-    border-radius: 10px;
-
-    &:hover {
-      background: #000;
-      color: white;
-    }
+  }
+  .logo {
+    width: 220px;
+    margin-left: 10px;
   }
 }

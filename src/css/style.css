@@ -1,70 +1,109 @@
+/* Navigation bar specific CSS variables */
+/* Navigation bar CSS */
 .navbar {
-  width: 90%;
-  height: 12vh;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 1px 5px #ccc;
+          box-shadow: 0 1px 5px #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px transparent #000;
-  padding: 10px;
-  -webkit-box-shadow: -0.5px -1px 12px 4px rgba(180, 180, 180, 0.6);
-          box-shadow: -0.5px -1px 12px 4px rgba(180, 180, 180, 0.6);
-  border-radius: 35px;
-  margin: auto;
-  margin-top: 7px;
+  margin: 5px auto;
+  width: 90%;
+  max-width: 1700px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar .logo {
-  width: 160px;
-  height: 50px;
-  background: url("../images/prideclothing-logo-6-2.jpg");
-  background-size: cover;
+  float: left;
 }
 
 .navbar .nav-links {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
+  display: inline-block;
 }
 
 .navbar .nav-links .nav-text {
-  text-decoration: none;
-  font-size: 20px;
-  color: #585858;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
 }
 
-.navbar .nav-links .nav-text:hover {
-  background: url("../images/lionPride.JPG") no-repeat center;
+.navbar .nav-links .nav-text li {
+  color: #000;
+  display: inline-block;
+  line-height: 30px;
+  width: 110px;
 }
 
-.navbar .nav-design_btn {
-  text-decoration: none;
+.navbar .nav-links .nav-text li:hover {
+  text-decoration: underline;
+}
+
+.navbar .primary-button {
+  display: inline-block;
+  background: #ca1527;
   color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  background: #f12b2b;
-  border-radius: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  padding: 5px;
+  text-decoration: none;
 }
 
-.navbar .nav-design_btn:hover {
+.navbar .primary-button:hover {
   background: #000;
-  color: white;
+  color: #fff;
+}
+
+/* Activates on the scroll*/
+.scrolled {
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 5px #333333;
+          box-shadow: 0 2px 5px #333333;
+  z-index: 999;
+}
+
+/* Responsive design changes to adapt to screen size */
+@media only screen and (min-width: 1500px) {
+  .nav-links {
+    margin-left: 100px;
+  }
+  .nav-links li {
+    width: 150px;
+  }
+  #product-design-button {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 1490px) {
+  .nav-text {
+    font-size: 20px;
+  }
+  .logo {
+    width: 220px;
+    margin-left: 10px;
+  }
 }
 
 .container {
   width: 100%;
-  height: 88%;
+  height: 88vh;
+  margin-bottom: 60px;
 }
 
 .container .home-content {
@@ -122,45 +161,45 @@
   height: 580px;
 }
 
-.wrap {
-  margin-top: 20%;
-}
-
-.section-img {
+.wrap .section-img {
+  margin-left: 50px;
   float: left;
 }
 
-.section-img img {
-  height: 500px;
-  width: 500px;
+.wrap .section-img img {
+  height: 400px;
+  width: 400px;
 }
 
-.section2-content {
+.wrap .section2-content {
+  margin-right: 50px;
   width: 50%;
   float: right;
 }
 
-.section2-content h1 {
-  margin-left: -18%;
+.wrap .section2-content h1 {
+  margin-left: -20%;
+  margin-bottom: 20px;
   font-weight: 1000;
   font-size: 55px;
 }
 
-.section2-content p {
+.wrap .section2-content p {
   color: grey;
+  margin-bottom: 10px;
 }
 
-.section2-content .section2-btn {
+.wrap .section2-content .section2-btn {
   border-radius: 30px;
 }
 
-.section2-content .section2-btn:hover {
+.wrap .section2-content .section2-btn:hover {
   background: #ff5454;
   color: white;
 }
 
 .wrap {
-  margin: 10% 0;
+  margin: 50px 0;
 }
 
 .section3-img {
@@ -169,9 +208,16 @@
   margin-right: -250px;
 }
 
+.section3-img .hoodie-top__img {
+  border: 1px solid blue;
+  width: 700px;
+  height: 38px;
+  margin: -80px 50px 50px -210px;
+}
+
 .section3-img img {
-  height: 500px;
-  width: 500px;
+  height: 380px;
+  width: 350px;
 }
 
 .section3-content {
@@ -183,11 +229,13 @@
 .section3-content h1 {
   font-weight: 1000;
   font-size: 55px;
+  padding-bottom: 20px;
 }
 
 .section3-content p {
   color: grey;
   text-align: left;
+  padding-bottom: 15px;
 }
 
 .section3-content .section3-btn {
@@ -379,6 +427,7 @@
 }
 
 .footer .footer-section .footer-logo {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,8 +435,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -398,11 +448,12 @@
 }
 
 .footer .footer-section .footer-logo img {
-  width: 250px;
-  height: 80px;
+  width: 230px;
+  height: 70px;
 }
 
 .footer .footer-section .footer__nav-links {
+  margin-top: 25px;
   list-style: none;
   display: inline-block;
 }

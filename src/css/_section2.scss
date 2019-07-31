@@ -1,28 +1,28 @@
-.wrap {
-  margin-top: 20%;
-}
-
 .section-img {
+  margin-left: 50px;
   float: left;
 
   img {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
   }
 }
 
 .section2-content {
+  margin-right: 50px;
   width: 50%;
   float: right;
 
   h1 {
-    margin-left: -18%;
+    margin-left: -20%;
+    margin-bottom: 20px;
     font-weight: 1000;
     font-size: 55px;
   }
 
   p {
     color: grey;
+    margin-bottom: 10px;
   }
 
   .section2-btn {

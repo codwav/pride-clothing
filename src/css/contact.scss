@@ -1,0 +1,21 @@
+/* Google Maps embed */
+#officeLocation {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+}
+#officeLocation iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+/* Responsive design changes to adapt to screen size */
+  
+@media only screen and (max-width: 1100px) {
+  #officeLocation {
+    padding-bottom: 60%;
+  }
+}

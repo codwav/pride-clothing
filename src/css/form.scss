@@ -1,0 +1,83 @@
+$form-text-font-size: 20px;
+
+.error-message {
+  color: #e01d1d;
+  display: block;
+  position: relative;
+  top: -20px;
+}
+
+.form-label {
+  display: block;
+  font-size: $form-text-font-size;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px #EEEEEE;
+  font-size: $form-text-font-size;
+  line-height: $form-text-font-size;
+  margin-bottom: 20px;
+  width: 100%; max-width: 750px;
+  padding: 5px;
+
+  &:focus {
+    box-shadow: 0 0 0 1px #000;
+    outline: 0;
+  }
+}
+
+.form-input-error {
+  border: 1px solid red;
+  outline: 0;
+
+  &:focus {
+    box-shadow: 0 0 0 1px #ff0000;
+  }
+}
+
+.form-block {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%; min-width: 200px; max-width: 1700px;
+}
+
+.form-textarea {
+  height: 170px; max-height: 1000px; min-height: 30px;
+  resize: vertical;
+}
+
+.form-submit {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: $form-text-font-size;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+.form-input, .form-submit {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}

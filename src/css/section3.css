@@ -1,32 +1,34 @@
-.wrap {
-  margin: 10% 0;
+.section3-img {
+  width: 100%;
 }
 
-.section3-img {
-  float: right;
-  width: 30%;
-  margin-right: -250px;
+.section3-img .hoodie-top__img {
+  position: relative;
+  width: 700px;
+  height: auto;
+  left: -180px;
+  bottom: 20px;
 }
 
 .section3-img img {
-  height: 500px;
-  width: 500px;
+  height: auto;
+  width: 320px;
 }
 
 .section3-content {
   width: 60%;
-  float: left;
-  margin-left: 10%;
 }
 
 .section3-content h1 {
   font-weight: 1000;
   font-size: 55px;
+  padding-bottom: 20px;
 }
 
 .section3-content p {
-  color: grey;
+  color: black;
   text-align: left;
+  padding-bottom: 15px;
 }
 
 .section3-content .section3-btn {

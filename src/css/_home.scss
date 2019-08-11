@@ -1,11 +1,12 @@
 .container {
   width: 100%;
   height: 88vh;
+  margin-bottom: 60px;
 
   .home-content {
     position: relative;
     display: block;
-    margin: 130px 0 0 80px;
+    margin-top: 150px;
 
     h1 {
       margin: 10px 0;
@@ -32,7 +33,6 @@
 
         &:hover {
           cursor: pointer;
-          background: #6faedc;
           border-radius: 8px;
           box-shadow: 0 2px 2px #000;
           transform: translateY(-3px);
@@ -47,14 +47,17 @@
   .bg-image {
     position: relative;
     display: block;
-    left: 600px;
-    top: -438px;
-    width: 650px;
-    height: 580px;
+    // left: 600px;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: auto;
 
     .home-img {
-      width: 650px;
-      height: 580px;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      width: 750px;
+      height: auto;
     }
   }
 }

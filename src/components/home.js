@@ -1,21 +1,17 @@
 import React, { Component } from "react";
-import Navbar from "./navbar";
 import "./../css/style.scss";
-import Grid from "@material-ui/core/Grid";
 import { Button } from "@material-ui/core";
 import Section2 from "./section2";
 import Section3 from "./section3";
 import Section4 from "./section4";
-import Footer from "./footer";
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <Grid container spacing={1}>
-          <div className="container">
-            <Grid item sm={8} xs={12} md={6}>
+        <div className="container">
+          <div className="row">
+            <div className="col s12 l6">
               <div className="home-content">
                 <h1>T-Shirts Designing</h1>
                 <p>
@@ -24,7 +20,12 @@ class Home extends Component {
                   The point of using Lorem Ipsum is that it has a more-or-less
                   normal distribution of letters.
                 </p>
-                <Button variant="outlined" size="large" color="secondary">
+                <Button
+                  className="home-btn"
+                  variant="outlined"
+                  color="secondary"
+                  size="large"
+                >
                   Customise Now
                 </Button>
                 <div className="social-links">
@@ -48,22 +49,21 @@ class Home extends Component {
                   </a>
                 </div>
               </div>
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
+            </div>
+            <div className="col s12 l6">
               <div className="bg-image">
                 <img
                   className="home-img"
-                  src={require("../images/bg.png")}
+                  src={require("../images/background.jpg")}
                   alt="bg"
                 />
               </div>
-            </Grid>
+            </div>
           </div>
-        </Grid>
+        </div>
         <Section2 />
         <Section3 />
         <Section4 />
-        <Footer />
       </div>
     );
   }

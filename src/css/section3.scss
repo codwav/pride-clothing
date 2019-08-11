@@ -1,29 +1,22 @@
-.wrap {
-  margin: 50px 0;
-}
-
 .section3-img {
-  float: right;
-  width: 30%;
-  margin-right: -250px;
+  width: 100%;
 
   .hoodie-top__img {
-    border: 1px solid blue;
+    position: relative;
     width: 700px;
-    height: 38px;
-    margin: -80px 50px 50px -210px;
+    height: auto;
+    left: -180px;
+    bottom: 20px;
   }
 
   img {
-    height: 380px;
-    width: 350px;
+    height: auto;
+    width: 320px;
   }
 }
 
 .section3-content {
   width: 60%;
-  float: left;
-  margin-left: 10%;
 
   h1 {
     font-weight: 1000;
@@ -32,7 +25,7 @@
   }
 
   p {
-    color: grey;
+    color: black;
     text-align: left;
     padding-bottom: 15px;
   }

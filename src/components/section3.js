@@ -5,9 +5,9 @@ import Button from "@material-ui/core/Button";
 const Section3 = () => {
   return (
     <div>
-      <Grid container spacing={2}>
-        <div className="wrap">
-          <Grid item xs={12} sm={8} md={6}>
+      <div className="container">
+        <div className="row">
+          <div className="col s12 m5 l6">
             <div className="section3-content">
               <h1>Easy to Edit</h1>
               <p>
@@ -22,8 +22,8 @@ const Section3 = () => {
                 Design Your Hoodie
               </Button>
             </div>
-          </Grid>
-          <Grid item xs={12} sm={8} md={6}>
+          </div>
+          <div className="col s12 m7 l6">
             <div className="section3-img">
               <img
                 className="hoodie-top__img"
@@ -32,9 +32,9 @@ const Section3 = () => {
               />
               <img src={require("../images/basic.png")} />
             </div>
-          </Grid>
+          </div>
         </div>
-      </Grid>
+      </div>
     </div>
   );
 };

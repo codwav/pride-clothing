@@ -5,15 +5,23 @@ $navbar-font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   sans-serif;
 $navbar-font-weight: 300;
 
+.toggle-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  float: left;
+}
+
 /* Navigation bar CSS */
 .navbar {
   border-radius: 30px;
   box-shadow: 0 1px 5px #ccc;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5px auto;
+  margin: 10px auto;
   // display: block;
   // margin: 0 auto;
   // margin-top: 10px;
@@ -22,9 +30,13 @@ $navbar-font-weight: 300;
   width: 90%;
   max-width: 1700px;
   transition: 0.5s;
+  z-index: 999;
 
   .logo {
     float: left;
+    margin-left: -60px;
+    width: 250px;
+    height: auto;
   }
 
   .nav-links {
@@ -51,17 +63,22 @@ $navbar-font-weight: 300;
 
   .primary-button {
     display: inline-block;
-    background: #ca1527;
-    color: #fff;
+    border: 0.5px solid #333333;
+    background: whitesmoke;
+    color: #000;
     font-family: $navbar-font-family;
-    font-size: $navbar-font-size;
+    font-size: 21px;
     font-weight: $navbar-font-weight;
-    padding: 5px;
+    padding: 7px;
     text-decoration: none;
 
     &:hover {
-      background: #000;
+      background: #ca1527;
       color: #fff;
+    }
+
+    &:active {
+      background: #333333;
     }
   }
 }
@@ -75,9 +92,21 @@ $navbar-font-weight: 300;
 //   background: #000;
 // }
 
+.toggle {
+  width: 100%;
+  padding: 20px 10px;
+  background: #001f44;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
 /* Activates on the scroll*/
 .scrolled {
   position: fixed;
+  background: #fff;
   width: 100%;
   margin-top: 0;
   border-radius: 0;
@@ -86,24 +115,24 @@ $navbar-font-weight: 300;
 }
 
 /* Responsive design changes to adapt to screen size */
-@media only screen and (min-width: 1500px) {
-  .nav-links {
-    margin-left: 100px;
-  }
-  .nav-links li {
-    width: 150px;
-  }
-  #product-design-button {
-    margin-left: 100px;
-  }
-}
+// @media only screen and (min-width: 1500px) {
+//   .nav-links {
+//     margin-left: 100px;
+//   }
+//   .nav-links li {
+//     width: 150px;
+//   }
+//   #product-design-button {
+//     margin-left: 100px;
+//   }
+// }
 
-@media only screen and (max-width: 1490px) {
-  .nav-text {
-    font-size: 20px;
-  }
-  .logo {
-    width: 220px;
-    margin-left: 10px;
-  }
-}
+// @media only screen and (max-width: 1490px) {
+//   .nav-text {
+//     font-size: 20px;
+//   }
+//   .logo {
+//     width: 220px;
+//     margin-left: 10px;
+//   }
+// }
